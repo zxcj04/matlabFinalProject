@@ -1,4 +1,4 @@
-function out = getCsvTall(inp, names)
+function out = getCsvTable(inp, names)
     
     switch nargin
         case 2
@@ -11,6 +11,6 @@ function out = getCsvTall(inp, names)
     ds.MissingValue = 0;
 %     preview(ds)
     
-    out = tall(ds);
+    out = readall(ds);
 
 end
